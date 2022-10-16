@@ -11,7 +11,14 @@ import {
 import { Icon } from 'react-native-elements'
 import tw from 'tailwind-react-native-classnames'
 
-const data = [
+type NavOptionsData = {
+  id: string
+  title: string
+  image: string
+  page: string
+}
+
+const navData: NavOptionsData[] = [
   {
     id: '1',
     title: 'Get a ride',
@@ -30,7 +37,7 @@ export default function NavOptions() {
   const navigation = useNavigation()
   return (
     <FlatList
-      data={data}
+      data={navData}
       horizontal
       keyExtractor={(item) => item.id}
       renderItem={({ item }) => (
