@@ -1,17 +1,27 @@
 import React from 'react'
-import { Text, SafeAreaView, StyleSheet } from 'react-native'
-import { useSelector } from 'react-redux'
+import { StyleSheet, Image, View } from 'react-native'
+import { SafeAreaProvider } from 'react-native-safe-area-context'
 import tw from 'tailwind-react-native-classnames'
-import { RootState } from '../../store'
+
+import NavOptions from '../../components/NavOptions'
 
 export default function Home() {
-  const reduxState = useSelector((state: RootState) => state)
-  console.log(reduxState)
-
   return (
-    <SafeAreaView style={tw`bg-white h-full`}>
-      <Text style={tw`text-red-500 p-10`}>{reduxState.destination}</Text>
-    </SafeAreaView>
+    <SafeAreaProvider style={tw`bg-white h-full`}>
+      <View style={tw`p-5`}>
+        <Image
+          style={{
+            width: 100,
+            height: 100,
+            resizeMode: 'contain'
+          }}
+          source={{
+            uri: 'https://links.papareact.com/gzs'
+          }}
+        />
+        <NavOptions />
+      </View>
+    </SafeAreaProvider>
   )
 }
 
