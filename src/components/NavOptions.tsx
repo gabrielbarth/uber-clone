@@ -1,3 +1,4 @@
+import { useNavigation } from '@react-navigation/native'
 import React from 'react'
 import {
   FlatList,
@@ -15,24 +16,28 @@ const data = [
     id: '1',
     title: 'Get a ride',
     image: 'https://links.papareact.com/3pn',
-    page: 'MapScreen'
+    page: 'Map'
   },
   {
     id: '2',
     title: 'Order food',
     image: 'https://links.papareact.com/28w',
-    screen: 'EatsScreen'
+    page: 'Eats'
   }
 ]
 
 export default function NavOptions() {
+  const navigation = useNavigation()
   return (
     <FlatList
       data={data}
       horizontal
       keyExtractor={(item) => item.id}
       renderItem={({ item }) => (
-        <TouchableOpacity style={tw`p-2 pl-6 pb-8 bg-gray-200 m-2 w-40`}>
+        <TouchableOpacity
+          onPress={() => navigation.navigate(item.page)}
+          style={tw`p-2 pl-6 pb-8 bg-gray-200 m-2 w-40`}
+        >
           <View>
             <Image
               style={{ width: 120, height: 120, resizeMode: 'contain' }}
