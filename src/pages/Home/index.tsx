@@ -3,11 +3,14 @@ import { StyleSheet, Image, View } from 'react-native'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete'
 import tw from 'tailwind-react-native-classnames'
+import { useDispatch } from 'react-redux'
 
 import { GOOGLE_MAPS_APIKEY } from '@env'
 import NavOptions from '../../components/NavOptions'
+import { setDestination, setOrigin } from '../../slices/navSlice'
 
 export default function Home() {
+  const dispatch = useDispatch()
   return (
     <SafeAreaProvider style={tw`bg-white h-full`}>
       <View style={tw`p-5`}>
@@ -30,8 +33,14 @@ export default function Home() {
           minLength={2}
           enablePoweredByContainer={false}
           onPress={(data, details = null) => {
-            console.log(data)
-            console.log(details)
+            dispatch(
+              setOrigin({
+                location: details?.geometry.location,
+                description: data.description
+              })
+            )
+
+            dispatch(setDestination(null))
           }}
           fetchDetails={true}
           nearbyPlacesAPI="GooglePlacesSearch"

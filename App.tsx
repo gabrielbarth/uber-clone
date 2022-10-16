@@ -23,7 +23,13 @@ export default function App() {
                 headerShown: false
               }}
             />
-            <Stack.Screen name="Map" component={Map} />
+            <Stack.Screen
+              name="Map"
+              component={Map}
+              options={{
+                headerShown: false
+              }}
+            />
           </Stack.Navigator>
           <StatusBar style="auto" />
         </SafeAreaProvider>
