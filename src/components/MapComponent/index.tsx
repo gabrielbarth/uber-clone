@@ -11,7 +11,7 @@ import { useRef } from 'react'
 export default function MapComponent() {
   const origin = useSelector(selectOrigin)
   const destination = useSelector(selectDestination)
-  const mapRef = useRef(null)
+  const mapRef = useRef<any>(null)
 
   useEffect(() => {
     if (!origin || !destination) return

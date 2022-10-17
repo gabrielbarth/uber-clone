@@ -11,8 +11,6 @@ export default function Map() {
   const Stack = createNativeStackNavigator()
   return (
     <View>
-      <Text>index</Text>
-
       <View style={tw`h-1/2`}>
         <MapComponent />
       </View>
