@@ -34,12 +34,12 @@ You'll need to have React Native Expo environment configured. So, take a look [h
 
 ## :hammer_and_wrench: Installing
 
-Now follow the bellow steps to run project:
-**1.** Clone this repo using `git clone https://github.com/gabrielbarth/uber-clone.git`.
-**2.** Move to the project directory: `cd uber-clone`.
-**3.** Run `npm i` or `yarn` to install dependencies.
-**4.** Run `npm run start` or `yarn start` to run the app on your device or simulator.
-**5.** To open on your physical device point the camera at the QR Code provided.<br/>
+Now follow the bellow steps to run project: <br> <br>
+**1.** Clone this repo using `git clone https://github.com/gabrielbarth/uber-clone.git`. <br>
+**2.** Move to the project directory: `cd uber-clone`. <br>
+**3.** Run `npm i` or `yarn` to install dependencies. <br>
+**4.** Run `npm run start` or `yarn start` to run the app on your device or simulator. <br>
+**5.** To open on your physical device point the camera at the QR Code provided.<br>
 
 ## :bulb: :handshake: Contributing
 
