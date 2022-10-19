@@ -8,18 +8,18 @@ This React Native application represents the Uber app clone considering its main
 
 ## :globe_with_meridians: Services integration
 
-:white_check_mark: **Google Maps Directions API**
-:white_check_mark: **Google Maps Distance Matrix API**
-:white_check_mark: **Gooogle Maps Places API**
+:white_check_mark: **Google Maps Directions API**<br>
+:white_check_mark: **Google Maps Distance Matrix API**<br>
+:white_check_mark: **Gooogle Maps Places API**<br>
 
 ## :link: Main project dependencies
 
-:white_check_mark: [**@react-navigation (v6)**](https://reactnavigation.org/) `// routing and navigation for your React Native apps`
-:white_check_mark: [**reduxjs/toolkit**](https://redux-toolkit.js.org/) `// State management. Toolset for efficient Redux development`
-:white_check_mark: [**react-native-elements**](https://reactnativeelements.com/) `// React Native UI toolkit`
-:white_check_mark: [**react-native-maps**](https://github.com/react-native-maps/react-native-maps) `// React Native Map components for iOS + Android`
-:white_check_mark: [**react-native-google-places-autocomplete**](https://github.com/FaridSafi/react-native-google-places-autocomplete) `// Customizable Google Places autocomplete component for iOS and Android React-Native apps`
-:white_check_mark: [**react-native-maps-directions**](https://github.com/bramus/react-native-maps-directions) `// Directions component for react-native-maps. Draw a route between two coordinates, powered by the Google Maps Directions API`
+:white_check_mark: [**@react-navigation (v6)**](https://reactnavigation.org/) `// routing and navigation for your React Native apps`<br>
+:white_check_mark: [**reduxjs/toolkit**](https://redux-toolkit.js.org/) `// State management. Toolset for efficient Redux development`<br>
+:white_check_mark: [**react-native-elements**](https://reactnativeelements.com/) `// React Native UI toolkit`<br>
+:white_check_mark: [**react-native-maps**](https://github.com/react-native-maps/react-native-maps) `// React Native Map components for iOS + Android`<br>
+:white_check_mark: [**react-native-google-places-autocomplete**](https://github.com/FaridSafi/react-native-google-places-autocomplete) `// Customizable Google Places autocomplete component for iOS and Android React-Native apps`<br>
+:white_check_mark: [**react-native-maps-directions**](https://github.com/bramus/react-native-maps-directions) `// Directions component for react-native-maps. Draw a route between two coordinates, powered by the Google Maps Directions API`<br>
 :white_check_mark: [**tailwind-react-native-classnames**](https://github.com/jaredh159/tailwind-react-native-classnames) `// API for TailwindCSS + React Native` <br>
 
 ### :iphone: Visual interfaces
