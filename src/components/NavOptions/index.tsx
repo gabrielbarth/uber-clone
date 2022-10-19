@@ -13,6 +13,7 @@ import { Icon } from 'react-native-elements'
 import { useSelector } from 'react-redux'
 
 import { selectOrigin } from '../../slices/navSlice'
+import { MapNavigationType } from '../../pages/Map'
 
 type NavOptionsData = {
   id: string
@@ -37,7 +38,7 @@ const navData: NavOptionsData[] = [
 ]
 
 export default function NavOptions() {
-  const navigation = useNavigation()
+  const navigation = useNavigation<MapNavigationType>()
   const origin = useSelector(selectOrigin)
   return (
     <FlatList
@@ -46,7 +47,7 @@ export default function NavOptions() {
       keyExtractor={(item) => item.id}
       renderItem={({ item }) => (
         <TouchableOpacity
-          onPress={() => navigation.navigate(item.page)}
+          onPress={() => navigation.navigate(item.page as any)}
           disabled={!origin}
           style={tw`p-2 pl-6 pb-8 bg-gray-200 m-2 w-40`}
         >

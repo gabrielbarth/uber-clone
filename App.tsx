@@ -2,13 +2,23 @@ import { StatusBar } from 'expo-status-bar'
 import { Provider } from 'react-redux'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
 import { NavigationContainer } from '@react-navigation/native'
-import { createNativeStackNavigator } from '@react-navigation/native-stack'
+import {
+  createNativeStackNavigator,
+  NativeStackNavigationProp
+} from '@react-navigation/native-stack'
 
 import { store } from './src/store'
 
 import Home from './src/pages/Home'
 import Map from './src/pages/Map'
 import { KeyboardAvoidingView, Platform } from 'react-native'
+
+type RootStackParamList = {
+  Home: undefined
+  Map: undefined
+}
+
+export type AppNavigationType = NativeStackNavigationProp<RootStackParamList>
 
 export default function App() {
   const Stack = createNativeStackNavigator()

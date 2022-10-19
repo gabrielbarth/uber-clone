@@ -14,11 +14,12 @@ import { useDispatch } from 'react-redux'
 
 import { GOOGLE_MAPS_APIKEY } from '@env'
 import { setDestination } from '../../slices/navSlice'
+import { MapNavigationType } from '../../pages/Map'
 import NavFavourites from '../NavFavourites'
 
 export default function NavigateCard() {
   const dispatch = useDispatch()
-  const navigation = useNavigation()
+  const navigation = useNavigation<MapNavigationType>()
   return (
     <SafeAreaView style={tw`bg-white flex-1`}>
       <Text style={tw`text-center py-5 text-xl`}>Good Morning!</Text>
